@@ -1,6 +1,6 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
-var passwordcharacters = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"]
+var passwordcharacters = []
 
 // Write password to the #password input
 function writePassword() {
@@ -11,6 +11,7 @@ function writePassword() {
     var passwordLenght=parseInt(window.prompt("Please select the desired lenght for your password between 8 and 128 characters "),10);
   }
 
+  var lowercase = window.confirm("Do you want to use lowercase characters")
 
   var uppercase = window.confirm("Do you want to use uppercase characters")
 
@@ -18,8 +19,10 @@ function writePassword() {
 
   var numeric = window.confirm("Do you want to use numeric characters")
 
-  while (uppercase == false && special== false && numeric == false){
+  while (lowercase == false && uppercase == false && special== false && numeric == false){
     alert ("You need at least 1 of the options")
+
+    var lowercase = window.confirm("Do you want to use lowercase characters")
 
     var uppercase = window.confirm("Do you want to use uppercase characters")
 
@@ -28,6 +31,10 @@ function writePassword() {
     var numeric = window.confirm("Do you want to use numeric characters")
 
   }
+
+  if (lowercase == true){
+    passwordcharacters.push ("a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z")
+   }
 
   if (uppercase == true){
     passwordcharacters.push ("A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z")
