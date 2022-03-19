@@ -29,6 +29,20 @@ function writePassword() {
 
   }
 
+  if (uppercase == true){
+    passwordcharacters.push ("A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z")
+   }
+
+   if (special == true){
+    passwordcharacters.push ("!","#","$","%","&","/","?",".",",","-","_","+","{","}","(",")")
+   }
+
+   if (numeric == true){
+    passwordcharacters.push ("1","2","3","4","5","6","7","8","9")
+   }
+
+
+   
  
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
