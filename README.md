@@ -1,4 +1,4 @@
-This is the second homework assignment
+This is the third homework assignment
 
 It consisted on successfully deploying a webpage that looks like this:
 
