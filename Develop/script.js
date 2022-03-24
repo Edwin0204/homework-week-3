@@ -1,9 +1,10 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
-var passwordcharacters = []
+
 
 // Write password to the #password input
 function writePassword() {
+  var passwordcharacters = []
   var passwordLenght=parseInt(window.prompt("Please select the desired lenght for your password between 8 and 128 characters "),10);
 
   while(passwordLenght<8 || passwordLenght>128 || isNaN(passwordLenght)) {
@@ -66,4 +67,3 @@ function writePassword() {
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
-  
