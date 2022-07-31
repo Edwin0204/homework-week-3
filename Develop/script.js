@@ -10,6 +10,7 @@ function writePassword() {
   while(passwordLenght<8 || passwordLenght>128 || isNaN(passwordLenght)) {
     alert ("Please select a number between 8 and 128")
     var passwordLenght=parseInt(window.prompt("Please select the desired lenght for your password between 8 and 128 characters "),10);
+
   }
 
   var lowercase = window.confirm("Do you want to use lowercase characters")
